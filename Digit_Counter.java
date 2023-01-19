@@ -17,10 +17,13 @@ public class Program
     int counter = 0;
     int inp = sc.nextInt();
     int original_num = inp;
+    int sum = 0 ;
     for(int i =0; inp>0 ;i++){
-        inp = inp/10;
+        sum = sum + inp % 10;
+        inp= inp/10;
+        System.out.println(inp);
         counter++;
     }
-    System.out.println("Total number of count "+ original_num+ ": =" + counter);	
-	}
+    System.out.println("Total number of count "+ original_num+ ": = " + counter+ " & sum is :=" +sum);	
+    }
 }
