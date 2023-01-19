@@ -1,3 +1,14 @@
+/* 
+Total number of count 1234567: = 7
+     123456
+     12345
+     1234
+     123
+     12
+     1
+     0
+*/
+
 import java.util.Scanner;
 public class Program
 {
