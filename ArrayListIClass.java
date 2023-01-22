@@ -1,21 +1,19 @@
 import java.util.ArrayList;
-
+import java.util.Collections;
 class ArrayListClass{
 
 
     static void reverseArrayList(ArrayList<Integer> list){
-    
-    int i = 0 , j = list.size() - 1;
-    while(i < j){
-       
-        Integer temp = Integer.valueOf(list.get(i));
-        list.set(i, list.get(j));
-        list.set(j, temp);
-        System.out.println("temp: " + temp);
-        j--;
-        i++;
-    }
-    System.out.println("Reserse List is : "+ list);
+        int i = 0 , j = list.size() - 1;
+        while(i < j){
+        
+            Integer temp = Integer.valueOf(list.get(i));
+            list.set(i, list.get(j));
+            list.set(j, temp);
+            j--;
+            i++;
+        }
+        System.out.println("Reserse List is : "+ list);
     }
     public static void main(String args[]){
         
@@ -39,5 +37,10 @@ class ArrayListClass{
         System.out.println("arraylist size "+ list.size());
 
         reverseArrayList(list);
+        Collections.reverse(list);
+        // Collections.sort(list);
+        System.out.println("arraylist "+ list);
+        // Collections.sort(list , Collections.reverseOrder());
+        System.out.println("arraylist "+ list);
     }
 }
